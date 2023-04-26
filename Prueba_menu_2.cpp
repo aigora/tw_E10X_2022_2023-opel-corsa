@@ -18,7 +18,7 @@ void subbalance1() {
 
 void opcion1() {
     int subbalance, dato;
-	printf("Has energetico\n");
+	printf("Has elegido la opcion del balance energetico\n");
 	printf("El balance energetico nos habla sobre el porcentaje de energias\n");
 	printf("renovables y no renovables, y desglosa el tipo de energias que forman cada uno.");
 	printf("Selecciona si quieres consultar el reparto de energias (1), o verlo por comunidades autonomas (2)\n");
