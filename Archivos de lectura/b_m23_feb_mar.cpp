@@ -3,7 +3,6 @@
 int main()
 {
 	char caracter;
-	int anyo1,anyo2;
 	FILE *pf;
 	pf = fopen("C:/Info trabajo/ficheros archivo/b_m23_feb_mar.txt","r");
 	if(pf==NULL)
