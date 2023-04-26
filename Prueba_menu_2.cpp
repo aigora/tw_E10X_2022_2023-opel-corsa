@@ -3,7 +3,7 @@
 void subbalance1() {
     int tiempo;
 	printf("Estas viendo el balance energetico nacional\n");
-	printf("Elegir si lo quieres ver anualmente(1) o mensualmente(2)\n");
+	printf("Elegir si lo quieres ver anualmente(1) o mensualmente(solo 2023)(2)\n");
 	scanf("%i",&tiempo);
 	switch(tiempo){
 		case 1:
