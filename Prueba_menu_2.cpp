@@ -1,20 +1,246 @@
 #include <stdio.h>
 
 void subbalance1() {
-    int tiempo;
+    int tiempo,anyo1,anyo2;
 	printf("Estas viendo el balance energetico nacional\n");
 	printf("Elegir si lo quieres ver anualmente(1) o mensualmente(solo 2023)(2)\n");
 	scanf("%i",&tiempo);
 	switch(tiempo){
 		case 1:
-			printf("Hola\n");
-			break;
+			printf("Introduce los sobre los que quieres ver datos, en el formato YY-YY (Desde 2019 a 2022)\n");
+			scanf("%i-%i",&anyo1,&anyo2);
+			if(anyo1>=anyo2||anyo1<19||anyo2>23)
+			{
+				printf("Formato de tiempo incorrecto, reiniciando el sistema\n");
+			}
+			else
+			{
+				if(anyo1==19)
+				{
+					if(anyo2==20)
+					{
+					FILE *pf;
+	                int caracter;
+	                pf = fopen("C:/Info trabajo/ficheros archivo/b_a_2019_2020.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+				    }
+				}
+				else if(anyo2==21)
+				{
+					FILE *pf;
+	                int caracter;
+	                pf = fopen("C:/Info trabajo/ficheros archivo/b_a_2019_2021.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+				}
+			 	}
+			 	else if(anyo2==22)
+			 	{
+			 		FILE *pf;
+	                int caracter;
+	                pf = fopen("C:/Info trabajo/ficheros archivo/b_a_2019_2022.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+				}
+				 }
+				 else if(anyo2==23)
+				 {
+				 	FILE *pf;
+	                int caracter;
+	                pf = fopen("C:/Info trabajo/ficheros archivo/b_a_2019_2023.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+				}
+				 }
+				 }
+				 else if(anyo1==20)
+				 {
+				 	if(anyo2==21)
+				 	{
+				 	FILE *pf;
+	                int caracter;
+	                pf = fopen("C:/Info trabajo/ficheros archivo/b_a_2020_2021.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+				}
+				    }
+				    else if(anyo2==22)
+				 {
+				 	FILE *pf;
+	                int caracter;
+	                pf = fopen("C:/Info trabajo/ficheros archivo/b_a_2020_2022.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+				}
+				 }
+				 else if(anyo2==23)
+				 {
+				 				 		FILE *pf;
+	                int caracter;
+	                pf = fopen("C:/Info trabajo/ficheros archivo/b_a_2020_2023.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+				}
+				 }
+				 }
+				 else if(anyo1==21)
+				 {
+				 	if(anyo2==22)
+				 	{
+				 	FILE *pf;
+	                int caracter;
+	                pf = fopen("C:/Info trabajo/ficheros archivo/b_a_2021_2022.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+				}
+				 }
+				 else if(anyo2==23)
+				 {
+				 	FILE *pf;
+	                int caracter;
+	                pf = fopen("C:/Info trabajo/ficheros archivo/b_a_2021_2023.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+				 }
+					 }
+				 }
+				 if(anyo1==22)
+				 {
+				 	FILE *pf;
+	                int caracter;
+	                pf = fopen("C:/Info trabajo/ficheros archivo/b_a_2022_2023.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+				 }
+				 
+					 
+				 
+			
+		
+
+			    break;
+			
 		case 2:
 			printf("Adios\n");
 			break;
 
 	}
 }
+}
+}
+
+
 
 void opcion1() {
     int subbalance, dato;
