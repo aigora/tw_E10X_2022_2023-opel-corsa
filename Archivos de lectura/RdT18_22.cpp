@@ -6,7 +6,7 @@ int main()
 	int anyo1,anyo2;
 	FILE *pf;
 	printf("Introduce el nombre del archivo en el formato rdtYYYY\n");
-	pf = fopen("C:/Info trabajo/rdt1822/rdt1822.txt","r");
+	pf = fopen("C:/Info trabajo/ficheros archivo/rdt1822.txt","r");
 	if(pf==NULL)
 	{
 		printf("Error al abrir el fichero de lectura.\n");
