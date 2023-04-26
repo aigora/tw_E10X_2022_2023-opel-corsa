@@ -12,13 +12,13 @@ void subbalance1() {
 		case 2:
 			printf("Adios\n");
 			break;
-			
+
 	}
 }
 
 void opcion1() {
     int subbalance, dato;
-	printf("Has elegido la opcion del balance energetico\n");
+	printf("Has energetico\n");
 	printf("El balance energetico nos habla sobre el porcentaje de energias\n");
 	printf("renovables y no renovables, y desglosa el tipo de energias que forman cada uno.");
 	printf("Selecciona si quieres consultar el reparto de energias (1), o verlo por comunidades autonomas (2)\n");
@@ -33,7 +33,7 @@ void opcion1() {
 				subbalance1();
 				break;
 
-			
+
 		}
 	}
 	else
@@ -60,15 +60,15 @@ void opcion2() {
 	{
 		printf("joder\n");//explicacion y fichero sobre demanda final
 	}
-	
-    
+
+
 }
 
 void opcion3() {
     printf("Has elegido la opcion de generacion\n");
     printf("La generacion nos habla sobre los porcentajes de generacion de energias, las emisiones y\n");
     printf("el factor de emision de CO2, y la potencia instalada nacional\n");
-    
+
 }
 
 void opcion4() {
@@ -131,7 +131,7 @@ int main() {
             default:
                 printf("Opcion invalida\n");
                 break;
-                
+
         }
     } while (opcion != 7);
 
