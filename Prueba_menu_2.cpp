@@ -223,14 +223,14 @@ void subbalance1() {
 	                    }
                         fclose(pf);
 				 }
-				 
-					 
-				 
-			
-		
+
+
+
+
+
 
 			    break;
-			
+
 		case 2:
 			printf("Estas viendo el balance energetico mensual de 2023 (hasta marzo)\n");
 			printf("Introduce el numero que corresponde a cada mes, siendo enero el 1\n");
@@ -283,7 +283,7 @@ void subbalance1() {
 					default:
 						printf("Formato de meses incorrecto, volviendo al menu principal...\n\n");
 				}
-	
+
 			}
 			else if(mes1==2)
 			{
@@ -355,7 +355,56 @@ void opcion3() {
 }
 
 void opcion4() {
-    printf("Has elegido la opcion 4\n");
+    int subbintercambios, dato1, dato2;
+    printf("Has elegido la opcion de intercambios\n");
+    printf("Los intercambios ocurren tanto dentro de Espana como con Portugal, Marruecos, Andorra y Francia \n");
+    printf("y en estos nos muestran el saldo, la exportacion e importacion de cada pais\n");
+    printf("Selecciona si quieres consultar los intercambios internacionales (1) o entre peninsula y baleares(2)\n");
+    scanf("%i",&dato1);
+
+    if(dato1==1)
+    {
+    	printf("intercambios internacionales:\n");
+    	printf("Selecciona la frontera:\n");
+    	printf("Todas las fronteras(1), Andorra(2), Francia(3), Marruecos(4) o Portugal(5)\n");
+    	scanf("%i",&dato2);
+
+    	if(dato2==1)
+      {
+    	printf("Todas las fronteras\n");
+      }
+        if(dato2==2)
+      {
+    	printf("Andorra\n");
+      }
+        if(dato2==3)
+      {
+    	printf("Francia\n");
+      }
+        if(dato2==4)
+      {
+    	printf("Marruecos\n");
+      }
+      if(dato2==5)
+      {
+    	printf("Portugal\n");
+      }
+
+
+
+
+    }
+
+	else
+	{
+		printf("Espana-Baleares\n");
+
+
+
+	}
+
+
+
 }
 
 void opcion5() {
