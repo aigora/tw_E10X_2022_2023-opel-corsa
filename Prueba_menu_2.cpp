@@ -21,7 +21,7 @@ void subbalance1() {
 					{
 					FILE *pf,*pf1;
 	                int caracter;
-	                pf = fopen("C:/Info trabajo/ficheros archivo/b_a_2019_2020.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/b_a_2019_2020.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");
@@ -61,7 +61,7 @@ void subbalance1() {
 			 	{
 			 		FILE *pf;
 	                int caracter;
-	                pf = fopen("C:/Info trabajo/ficheros archivo/b_a_2019_2022.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/b_a_2019_2022.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");
@@ -81,7 +81,7 @@ void subbalance1() {
 				 {
 				 	FILE *pf;
 	                int caracter;
-	                pf = fopen("C:/Info trabajo/ficheros archivo/b_a_2019_2023.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/b_a_2019_2023.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");
@@ -104,7 +104,7 @@ void subbalance1() {
 				 	{
 				 	FILE *pf;
 	                int caracter;
-	                pf = fopen("C:/Info trabajo/ficheros archivo/b_a_2020_2021.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/b_a_2020_2021.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");
@@ -124,7 +124,7 @@ void subbalance1() {
 				 {
 				 	FILE *pf;
 	                int caracter;
-	                pf = fopen("C:/Info trabajo/ficheros archivo/b_a_2020_2022.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/b_a_2020_2022.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");
@@ -144,7 +144,7 @@ void subbalance1() {
 				 {
 				 				 		FILE *pf;
 	                int caracter;
-	                pf = fopen("C:/Info trabajo/ficheros archivo/b_a_2020_2023.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/b_a_2020_2023.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");
@@ -167,7 +167,7 @@ void subbalance1() {
 				 	{
 				 	FILE *pf;
 	                int caracter;
-	                pf = fopen("C:/Info trabajo/ficheros archivo/b_a_2021_2022.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/b_a_2021_2022.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");
@@ -187,7 +187,7 @@ void subbalance1() {
 				 {
 				 	FILE *pf;
 	                int caracter;
-	                pf = fopen("C:/Info trabajo/ficheros archivo/b_a_2021_2023.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/b_a_2021_2023.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");
@@ -208,7 +208,7 @@ void subbalance1() {
 				 {
 				 	FILE *pf;
 	                int caracter;
-	                pf = fopen("C:/Info trabajo/ficheros archivo/b_a_2022_2023.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/b_a_2022_2023.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");
@@ -244,7 +244,7 @@ void subbalance1() {
 						{
 					FILE *pf;
 	                int caracter;
-	                pf = fopen("C:/Info trabajo/ficheros archivo/b_m23_en_feb.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/b_m23_en_feb.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");
@@ -264,7 +264,7 @@ void subbalance1() {
 						{
 					FILE *pf;
 	                int caracter;
-	                pf = fopen("C:/Info trabajo/ficheros archivo/b_m23_en_mar.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/b_m23_en_mar.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");
@@ -290,7 +290,7 @@ void subbalance1() {
 				{
 					FILE *pf;
 	                int caracter;
-	                pf = fopen("C:/Info trabajo/ficheros archivo/b_m23_feb_mar.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/b_m23_feb_mar.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");
