@@ -1,0 +1,45 @@
+Titulo: balance electrico 2020 2021
+Sistema electrico NACIONAL 
+Magnitudes GWh 
+ 
+                                2020                       2021
+
+
+Hidraulica:                 30631,723-------------------29626,009
+Eolica:                     54906,246-------------------60525,656
+Solar fotovoltaica:         15302,144-------------------20981,043
+Solar termica:              4538,310--------------------4705,524
+Hidroeolica:                19,54-----------------------23,098
+Otras renovables:           4481,581--------------------4710,320
+Residuos renovables:        725,65----------------------877,94
+Generacion renovable:       110605,198------------------121459,146
+Turbinacion bombeo:         2751,44---------------------2649,324
+Nuclear:                    55758,359-------------------54041,019
+Ciclo combinado:            44022,855-------------------44500,099
+Carbon:                     5020,712--------------------4983,148
+Motores diesel:             2399,492--------------------2517,424
+Turbina de gas:             406,582---------------------423,579
+Turbina de vapor:           1387,607--------------------1108,055
+Cogeneracion:               27030,313-------------------26090,646
+Residuos no renovables:     2016,187--------------------2238,741
+Generacion no renovable:    140793,551------------------138552,039
+Consumos en bombeo:         (-4627,71)------------------(-4317,786)
+
+
+Importacion Francia:        11421,71--------------------11931,251
+Importacion Portugal:       6096,881--------------------4791,774
+Importacion Marruecos:      409,756---------------------688,185I
+mportacion Andorra:         0,016-----------------------0,012
+Exportacion Francia:        (-6192,458)-----------------(-6280,765)
+Exportacion Portugal:       (-7553,564)-----------------(-9543,490)
+Exportacion Marruecos:      (-706,61)-------------------(-509,392)
+Exportacion Andorra:        (-196,145)------------------(-225,135)
+Saldo I. internacionales:   3279,584--------------------852,439
+
+ 
+Estados
+ Definitivo: 01/01/2020 - 31/12/2021
+ 
+Fecha exportacion,27/04/2023 - 00:15:22
+ 
+Fuente www.ree.es 

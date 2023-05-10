@@ -1,0 +1,48 @@
+Titulo balance electrico 02/2023-03/2023
+Sistema electrico NACIONAL
+Magnitudes GWh
+ 
+                           feb/23                     mar/23
+
+
+Hidraulica:               2451,722-------------------2040,168
+Eolica:                   4669,555-------------------6691,651
+Solar fotovoltaica:       2028,179-------------------3114,931
+Solar termica:            178,788--------------------409,577
+Hidroeolica:              0,829----------------------1,572
+Otras renovables:         355,989--------------------307,67
+Residuos renovables:      71,962---------------------72,32
+Generacion renovable:     9757,026-------------------12637,892
+Turbinacion bombeo:       260,871--------------------540,079
+
+
+Nuclear:                  4597,959-------------------5102,289
+Ciclo combinado:          4367,686-------------------3114,786
+Carbon:                   417,949--------------------424,099
+Motores diesel:           195,864--------------------177,249
+Turbina de gas:           59,331---------------------51,356
+Turbina de vapor:         118,052--------------------103,679
+Fuel + Gas:               ND-------------------------(-0,000001)
+Cogeneracion:             1702,3---------------------1697,718
+Residuos no renovables:   111,675--------------------120,508
+Generacion no renovable:  11831,691------------------11331,767
+Consumos en bombeo:       (-399,19)------------------(-930,182)
+
+
+Importacion Francia:      344,673--------------------206,57
+Importacion Portugal:     570,791--------------------136,381
+Importacion Marruecos:    26,98----------------------26,559
+Importacion Andorra:      ND-------------------------0,00186
+
+Exportacion Francia:      (-937,173)-----------------(-1369,903)
+Exportacion Portugal:     (-692,816)-----------------(-1423,083)
+Exportacion Marruecos:    (-214,092)-----------------(-160,263)
+Exportacion Andorra:      (-21,205)------------------(-23,109)
+Saldo I. internacionales: (-922,842)-----------------(-2606,845)
+
+Estados
+ Provisional: 01/02/2023 - 31/03/2023
+ 
+Fecha exportacion 26/04/2023 - 21:24:21
+ 
+Fuente www.ree.es

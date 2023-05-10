@@ -1,0 +1,61 @@
+Titulo,balance-electrico_2022_2023,
+Sistema electrico,NACIONAL,
+Magnitudes,GWh,
+ ,,
+ ,2022,2023
+Hidraulica,"17863,039859","9814,21663"
+Eolica,"61175,592273999806","23037,700804"
+Solar fotovoltaica,"27864,341912","10001,839145"
+Solar termica,"4123,275375","1286,824586"
+Hidroeolica,"22,880844","5,5076279999999995"
+Otras renovables,"4656,293982","1189,46516"
+Residuos renovables,"877,7075629999999","264,649677"
+Generacion renovable,"116583,1318089998","45600,203629999996"
+Turbinacion bombeo,"3775,566857","1725,4713829999998"
+Nuclear,"55983,500262999994","18840,16067"
+Ciclo combinado,"68137,54715700001","12411,520696"
+Carbon,"7765,205005","1367,3901799999999"
+Motores diesel,"2548,2035720000003","723,912298"
+Turbina de gas,"657,4725450000001","207,570888"
+Turbina de vapor,"1207,2345759999998","415,30299099999996"
+Fuel + Gas,-,"-0,000001"
+Cogeneracion,"17757,670231","5971,351004"
+Residuos no renovables,"1899,766531","418,303829"
+Generacion no renovable,"159732,166737","42080,983938"
+Consumos en bombeo,"-6092,445957999999","-3149,304578"
+Importacion Francia,"4549,001363","1142,841965"
+Importacion Portugal,"3059,619784","1759,819372"
+Importacion Marruecos,"422,89124","114,84639999999999"
+Importacion Andorra,"0,007850000000000001","0,00186"
+Exportacion Francia,"-13379,61703","-4661,040971"
+Exportacion Portugal,"-12315,248075","-4185,389277"
+Exportacion Marruecos,"-1852,73953","-658,7542"
+Exportacion Andorra,"-285,65297","-100,44465999999998"
+Saldo I. internacionales,"-19801,737368000002","-6588,948668"
+Demanda en b.c.,"250421,1152199997","77942,93432199991"
+ ,,
+Notas,,
+ ,Balance electrico: asignacion de unidades de produccion segun combustible principal.,
+ ,"Otras renovables: incluye biogos, biomasa, hidraulica marina y geotermica.",
+ ,Los valores de incrementos y ano movil incluyen residuos hasta el 31/12/2014.,
+ ,Residuos renovables : generacion incluida en otras renovables y cogeneraci�n hasta el 31/12/2014.,
+ ,Turbinacion de bombeo puro + estimacion de turbinacion de bombeo mixto.,
+ ,Ciclo combinado: Incluye funcionamiento en ciclo abierto.,
+ ,Fuel + Gas: En el sistema electrico nacional se incluye la generacion con grupos auxiliares de Baleares.,
+ ,Cogeneracion: los valores de incrementos y ano movil incluyen residuos hasta el 31/12/2014.,
+ ,Residuos no renovables: generacion incluida en otras renovables y cogeneraci�n hasta el 31/12/2014.,
+ ,Demanda corregida: corregidos los efectos de temperatura y laboralidad..,
+ ,Valor positivo: saldo importador; valor negativo: saldo exportador.,
+ ,Los valores de incrementos no se calculan cuando los saldos de intercambios tienen distinto signo.,
+ ,Demanda corregida: corregidos los efectos de temperatura y laboralidad.,
+ ,,
+Estados,,
+ ,Definitivo: 01/01/2022 - 28/02/2022,
+ ,Provisional: 01/03/2022 - 31/03/2023,
+ ,Programa: 01/04/2023 - 25/04/2023,
+ ,Previsto: 26/04/2023 - 26/04/2023,
+ ,,
+Fecha exportacion,26/04/2023 - 22:33:18,
+ ,,
+Fuente,www.ree.es,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

@@ -1,0 +1,45 @@
+Titulo balance electrico 01/2023-02/2023
+Sistema electrico NACIONAL
+Magnitudes GWh
+ 
+                                                  ene/23             feb/23
+
+
+Hidraulica:                                    3853,384--------2451,722
+Eolica:                                        7456,386--------7669,555
+Solar fotovoltaica:                            1716,359--------2028,179
+Solar termica:                                 119,507---------178,788
+Hidroeolica:                                   1,649-----------0,829
+Otras renovables:                              290,121---------355,989
+Residuos renovables:                           68,128----------71,962
+Generacion renovable:                          13505,536-------9757,026
+Turbinacion bombeo:                            542,797---------260,871
+
+Nuclear:                                       5086,763--------4597,959
+Ciclo combinado:                               2708,467--------4367,686
+Carbon:                                        296,207---------417,949
+Motores diesel:                                186,631---------195,864
+Turbina de gas:                                64,152----------59,331
+Turbina de vapor:                              118,03----------118,052
+Cogeneracion:                                  1211,991--------1702,3003
+Residuos no renovables:                        103,391---------111,675
+Generacion no renovable:                       10318,433-------11831,691
+Consumos en bombeo:                            (-948,646)------(-399,19)
+
+Importacion Francia:                           315,199---------344,673
+Importacion Portugal:                          812,211---------570,791
+Importacion Marruecos:                         19,637----------26,98
+Exportacion Francia:                           (-1252,1)-------(-937,173)
+Exportacion Portugal:                          (-623,876)------(-692,816)
+Exportacion Marruecos:                         (-151,329)------(-214,092)
+Exportacion Andorra                            (-42,454)-------(-21,205)
+Saldo I. internacionales:                      (-922,713)------(-922,842)
+
+Demanda en b.c.:                               21952,611-------20266,685
+
+Estados
+   Provisional: 01/01/2023 - 28/02/2023
+
+Fecha exportacion: 26/04/2023 - 21:12:03
+
+Fuente www.ree.es

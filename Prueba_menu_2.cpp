@@ -41,7 +41,7 @@ void subbalance1() {
 				{
 					FILE *pf;
 	                int caracter;
-	                pf = fopen("C:/Info trabajo/ficheros archivo/b_a_2019_2021.txt","r");
+	                pf = fopen("C:/Users/pedro/OneDrive/Documentos/GitHub/tw_E10X_2022_2023-opel-corsa/Archivos de lectura/Ficheros/b_a_2019_2021.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");

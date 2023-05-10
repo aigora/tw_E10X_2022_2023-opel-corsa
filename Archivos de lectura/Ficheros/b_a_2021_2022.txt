@@ -1,0 +1,58 @@
+Titulo,balance-electrico_2021_2022,
+Sistema electrico,NACIONAL,
+Magnitudes,GWh,
+ ,,
+ ,2021,2022
+Hidraulica,"29626,009058999898","17863,039859"
+Eolica,"60525,656892","61175,592273999995"
+Solar fotovoltaica,"20981,043298","27864,341912"
+Solar termica,"4705,524869","4123,275375"
+Hidroeolica,"23,098239000000003","22,880844"
+Otras renovables,"4719,873222","4656,293982"
+Residuos renovables,"877,940731","877,7075629999999"
+Generacion renovable,"121459,1463099999","116583,13180899998"
+Turbinacion bombeo,"2649,3242609999998","3775,566857"
+Nuclear,"54041,019731","55983,500262999994"
+Ciclo combinado,"44500,099332000005","68137,54715700001"
+Carbon,"4983,148013","7765,205005"
+Motores diesel,"2517,424107","2548,2035720000003"
+Turbina de gas,"423,579904","657,4725450000001"
+Turbina de vapor,"1108,055957","1207,2345759999998"
+Fuel + Gas,"-0,000001",-
+Cogeneracion,"26090,64653","17757,670231"
+Residuos no renovables,"2238,741303","1899,766531"
+Generacion no renovable,"138552,03913699999","159732,166737"
+Consumos en bombeo,"-4317,786572999999","-6092,445957999999"
+Importacion Francia,"11931,251116000001","4549,001363"
+Importacion Portugal,"4791,77415","3059,619784"
+Importacion Marruecos,"688,1859300000001","422,89124"
+Importacion Andorra,"0,01216","0,00785"
+Exportacion Francia,"-6280,765213000001","-13379,61703"
+Exportacion Portugal,"-9543,490542","-12315,248075"
+Exportacion Marruecos,"-509,39259999999996","-1852,73953"
+Exportacion Andorra,"-225,13509","-285,65297"
+Saldo I. internacionales,"852,4399109999999","-19801,737368000002"
+Demanda en b.c.,"256545,83878500081","250421,1152200007"
+ ,,
+Notas,,
+ ,Balance electrico: asignacion de unidades de produccion segun combustible principal.,
+ ,"Otras renovables: incluye biogas, biomasa, hidraulica marina y geotermica.",
+ ,Los valores de incrementos y ano movil incluyen residuos hasta el 31/12/2014.,
+ ,Residuos renovables : generacion incluida en otras renovables y cogeneracion hasta el 31/12/2014.,
+ ,Turbinacion de bombeo puro + estimacion de turbinacion de bombeo mixto.,
+ ,Ciclo combinado: Incluye funcionamiento en ciclo abierto.,
+ ,Fuel + Gas: En el sistema electrico nacional se incluye la generacion con grupos auxiliares de Baleares.,
+ ,Cogeneracion: los valores de incrementos y ano movil incluyen residuos hasta el 31/12/2014.,
+ ,Residuos no renovables: generacion incluida en otras renovables y cogeneracion hasta el 31/12/2014.,
+ ,Demanda corregida: corregidos los efectos de temperatura y laboralidad..,
+ ,Valor positivo: saldo importador; valor negativo: saldo exportador.,
+ ,Los valores de incrementos no se calculan cuando los saldos de intercambios tienen distinto signo.,
+ ,Demanda corregida: corregidos los efectos de temperatura y laboralidad.,
+ ,,
+Estados,,
+ ,Definitivo: 01/01/2021 - 28/02/2022,
+ ,Provisional: 01/03/2022 - 31/12/2022,
+ ,,
+Fecha exportacion,27/04/2023 - 01:13:54,
+ ,,
+Fuente,www.ree.es,
