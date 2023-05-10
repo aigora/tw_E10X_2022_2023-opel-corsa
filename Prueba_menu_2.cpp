@@ -41,7 +41,7 @@ void subbalance1() {
 				{
 					FILE *pf;
 	                int caracter;
-	                pf = fopen("C:/Info trabajo/Ficheros archivo/b_a_2019_2021.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/b_a_2019_2021.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");
