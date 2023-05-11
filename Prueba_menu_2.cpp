@@ -13,7 +13,7 @@ void estadistica_balance()
   float anyo23[19];
   int i = 0;
   
-  plectura = fopen("C:/Info trabajo/Ficheros archivo/Estadisticas_balance_2019-2023.txt", "r");
+  plectura = fopen("Archivos de lectura/Ficheros/Estadisticas_Balance_2019-2023.txt", "r");
 
   if (plectura == NULL)
   {
@@ -113,7 +113,7 @@ void estadistica_balance()
     printf("Ano 2023: \t\t %f \t\t %f \t\t %f \n\n", min_anyo23, max_anyo23, mean_anyo23);
     
     
-    pescritura= fopen("C:/Info trabajo/Ficheros archivo/result.txt", "w");
+    pescritura= fopen("Archivos de lectura/Ficheros/result.txt", "w");
     if (pescritura == NULL)
     {
       printf("ERROR AL ABRIR EL FICHERO DE ESCRITURA");
