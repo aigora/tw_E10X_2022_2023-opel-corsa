@@ -1,18 +1,19 @@
 #include <stdio.h>
-#define N 2898
+#define N 30
+
 
 int main()
 {
   FILE *plectura;
   FILE *pescritura;
+
   // Defino un vector para cada variable a leer del fichero	
-  float temp[N];
-  float hum[N];
-  float viento[N];
-  float rad[N];
+  float nueve[N];
+  float veinte[N];
+
   int i = 0;
   // Abrir el archivo de lectura
-  plectura = fopen("C:/Users/pedro/Downloads/aranjuez.csv", "r");
+  plectura = fopen("C:/Info trabajo/Ficheros archivo/Estadisticas_prueba.txt", "r");
 
   if (plectura == NULL)
   {
@@ -22,86 +23,57 @@ int main()
   {
     // Leemos con un FOR porque conocemos el numero de lineas
     // Si no leeríamos linea a liena hasta el final del archivo
-    for (i = 0; i < N; i++)
+    for (i = 0; i <N; i++)
     {
-      fscanf(plectura, "%f,%f,%f,%f", &temp[i], &hum[i], &viento[i], &rad[i]); 
+      fscanf(plectura, "%f,%f", &nueve[i], &veinte[i]); 
     }
     // Se ha terminado de leer, luego se cierra el archivo
     fclose(plectura);	
 
     // Suponemos que el mínimo y máximo valores son el primero
     // Después iremos sustituyendo al encontrar un nuevo mínimo o máximo
-    float max_temp = temp[0];
-    float min_temp = temp[0];
-    float mean_temp = 0;
-    float max_hum = hum[0];
-    float min_hum = hum[0];
-    float mean_hum = 0;
-    float max_viento = viento[0];
-    float min_viento = viento[0];
-    float mean_viento = 0;
-    float max_rad = rad[0];
-    float min_rad = rad[0];
-    float mean_rad = 0;
+    float max_nueve = nueve[0];
+    float min_nueve = nueve[0];
+    float mean_nueve = 0;
+    float max_veinte = veinte[0];
+    float min_veinte = veinte[0];
+    float mean_veinte = 0;
+    
     // recorremos cada vector buscando mínimos y máximos y acumulando para las medias
     for (i = 0; i < N; i++)
     {
       // Temperadura
-      if(temp[i] > max_temp)
+      if(nueve[i] > max_nueve)
       {
-        max_temp = temp[i];
+        max_nueve = nueve[i];
       }	  	
-      if(temp[i] < min_temp)
+      if(nueve[i] < min_nueve)
       {
-        min_temp = temp[i];				  		
+        min_nueve = nueve[i];				  		
       }
-      mean_temp = mean_temp + temp[i];
+      mean_nueve = mean_nueve + nueve[i];
 			
       // Humedad
-      if(hum[i] > max_hum)
+      if(veinte[i] > max_veinte)
       {
-        max_hum = hum[i];
+        max_veinte = veinte[i];
       }	  	
-      if(hum[i] < min_hum)
+      if(veinte[i] < min_veinte)
       {
-        min_hum = hum[i];				  		
+        min_veinte = veinte[i];				  		
       }
-      mean_hum = mean_hum + hum[i];	  	
+      mean_veinte = mean_veinte + veinte[i];	  	
 		  
-      // Viento
-      if(viento[i] > max_viento)
-      {
-        max_viento = viento[i];
-      }	  	
-      if(viento[i] < min_viento)
-      {
-        min_viento = viento[i];				  		
-      }
-      mean_viento = mean_viento + viento[i];
-			
-      // Radiación
-      if(rad[i] > max_rad)
-      {
-        max_rad = rad[i];
-      }	  	
-      if(rad[i] < min_rad)
-      {
-        min_rad = rad[i];				  		
-      }
-      mean_rad = mean_rad + rad[i];				
-    }
-    // Calculamos medias
-    mean_temp = mean_temp/N;
-    mean_hum = mean_hum/N;
-    mean_viento = mean_viento/N;
-    mean_rad = mean_rad/N;
+
+    mean_nueve = mean_nueve/N;
+    mean_veinte = mean_veinte/N;
+    
 		
     // Mostramos resultados
     printf("Variable: \t Min \t Max \t Prom \n");
-    printf("Temperat: \t %f \t %f \t %f \n", min_temp, max_temp, mean_temp);
-    printf("Humedad: \t %f \t %f \t %f \n", min_hum, max_hum, mean_hum);
-    printf("Viento: \t %f \t %f \t %f \n", min_viento, max_viento, mean_viento);
-    printf("Radiacion: \t %f \t %f \t %f \n", min_rad, max_rad, mean_rad);
+    printf("2019: \t %f \t %f \n", min_nueve, max_nueve, mean_nueve);
+    printf("2020: \t %f \t %f \n", min_veinte, max_veinte, mean_veinte);
+    
 
     // Abrir el archivo de escritura
     pescritura= fopen("result.csv", "w");
@@ -112,15 +84,16 @@ int main()
     else
     {	
       fprintf(pescritura, "Variable: \t Min \t Max \t Prom \n");
-      fprintf(pescritura, "Temp: \t %f \t %f \t %f \n", min_temp, max_temp, mean_temp);
-      fprintf(pescritura, "Humedad: \t %f \t %f \t %f \n",min_hum, max_hum, mean_hum);
-      fprintf(pescritura, "Viento: \t %f \t %f \t %f \n", min_viento, max_viento, mean_viento);
-      fprintf(pescritura, "Radiacion: \t %f \t %f \t %f \n", min_rad, max_rad, mean_rad);
-
+      fprintf(pescritura, "Nueve: \t %f \t %f \n", min_nueve, max_nueve, mean_nueve);
+      fprintf(pescritura, "Veinte: \t %f \t %f \n", min_veinte, max_veinte, mean_veinte);
+      
       // Al terminar de escribir, cerramos el archivo
       fclose(pescritura);	
     }		
   }
-	
-  return 0;	
 }
+  return 0;	
+
+}
+
+
