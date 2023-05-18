@@ -913,7 +913,7 @@ void subgeneracion1()
 	int dato;
 	int tiempo,anyo;
 	printf("En la generacion, podemos ver distintos datos en periodos de 5 anyos en el territorio nacional\n");
-	printf("Decide si quieres ver la potencia instalada(1), la estructura de la \npotencia instalada renovable(2), o las emisiones generadas por la generacion\n");
+	printf("Decide si quieres ver la potencia instalada(1), la estructura de la \npotencia instalada renovable(2), o las emisiones generadas(3)\n");
 	scanf("%i",&dato);
 	switch(dato)
 	{
@@ -1011,12 +1011,117 @@ void subgeneracion1()
                         fclose(pf);
 			        }
 	        }
+	        break;
+	
+	case 3:
+	    printf("\nHas elegido la opcion de las emisiones generadas.\n\n");
+		printf("Ahora, elige si lo quieres ver en el periodo de 2007 a 2011 (1), de 2011 a 2015 (2), de 2015 a 2019 (3), o de 2019 a 2023 (4):\n\n");
+		scanf("%i",&anyo);
+		
+		if (anyo==1)
+		
+		{
+			printf("Has elegido la opcion de 2007 a 2011\n");
+			FILE *pf;
+	                int caracter;
+	                pf = fopen("Archivos de lectura/Ficheros/g_e_a_2007_2011.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+                     
+	    }
+	}
 
+         else if(anyo==2)
+		{
+			printf("Has elegido la opcion de 2011 a 2015\n");
+			FILE *pf;
+	                int caracter;
+	                pf = fopen("Archivos de lectura/Ficheros/g_e_2011_2015.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+                       
+	    }  
+	}
+
+	    else if(anyo==3)
+		{
+			printf("Has elegido la opcion de 2015 a 2019\n");
+			FILE *pf;
+	                int caracter;
+	                pf = fopen("Archivos de lectura/Ficheros/g_e_a_2015_2019.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+                      
+                    }
+                }
+            
+	      
+		   else if(anyo==4)
+		{
+			printf("Has elegido la opcion de 2019 a 2023\n");
+			FILE *pf;
+	                int caracter;
+	                pf = fopen("Archivos de lectura/Ficheros/g_e_a_2019_2023.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+                     
+	                }           
 		
 		
-}
+        }
+        else
+        {
+        	printf("\nERROR EN EL FORMATO; REINICIANDO EL PROGRAMA\n\n");
+		}
+	default:
+	printf("\nERROR EN EL FORMATO; REINICIANDO EL PROGRAMA\n\n");
 				
 
+}
 }
 void opcion1()
 {
