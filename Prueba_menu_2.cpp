@@ -701,7 +701,7 @@ void subdemanda1(){
 						{
 					FILE *pf;
 	                int caracter;
-	                pf = fopen("Archivos de lectura/Ficheros/b_m23_en_feb.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/d_m23_en_feb.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");
@@ -722,7 +722,7 @@ void subdemanda1(){
 						{
 					FILE *pf;
 	                int caracter;
-	                pf = fopen("Archivos de lectura/Ficheros/b_m23_en_mar.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/d_m23_en_mar.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");
@@ -748,7 +748,7 @@ void subdemanda1(){
 				{
 					FILE *pf;
 	                int caracter;
-	                pf = fopen("Archivos de lectura/Ficheros/b_m23_feb_mar.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/d_m23_feb_mar.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");
