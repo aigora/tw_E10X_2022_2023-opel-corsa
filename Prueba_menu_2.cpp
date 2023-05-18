@@ -542,7 +542,7 @@ void subdemanda1(){
 				 {
 				 	FILE *pf;
 	                int caracter;
-	                pf = fopen("Archivos de lectura/Ficheros/b_a_2019_2023.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/d_a_2019_2023.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");

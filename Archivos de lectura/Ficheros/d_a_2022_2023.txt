@@ -1,0 +1,31 @@
+DEMANDA MÁXIMA DIARIA 01/01/2022-31/12/2023
+
+Sistema eléctrico Peninsular
+
+Magnitudes [GW/h]
+ 
+Periodos:
+
+ -Invierno: OCTUBRE-MAYO
+ -Verano: JUNIO-SEPTIEMBRE
+
+ 
+-MAXIMO HISTORICO INVIERNO: 18/12/2007: 905.949 Gw/H.
+
+-MAXIMO HISTORICO VERANO: 20/07/2006: 821.819 Gw/H.
+
+-MAXIMO RELATIVO INVIERNO[22-23]: 779.326 Gw/H.(2023)
+
+-MAXIMO RELATIVO VERANO[19-23]: 787.792 Gw/H. (2022)
+
+Periodo 2022-2023:
+-2022:
+Invierno: 773.47 [Gw/H]
+Verano: 787.792 [Gw/H]
+-2023: 
+Invierno: 779.326 [Gw/H]
+Verano: No hay datos aun.
+
+Fecha exportación,18/05/2023 - 15:26:39
+
+Fuente www.ree.es
