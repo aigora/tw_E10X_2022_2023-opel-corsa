@@ -593,7 +593,7 @@ void subdemanda1(){
 				{
 					printf("Vas a ver las estadisticas a nivel nacional\n\n");
 					estadistica_demanda();
-					printf("\nPresiona (1) para verlas de forma anual, o (2) de forma mensual");
+					printf("\nPresiona (1) para verlas de forma anual, o (2) de forma mensual\n");
 					scanf("%i",&tiempo);
 					if(tiempo==1)
 							{
@@ -900,6 +900,10 @@ void subdemanda1(){
 			}
 
 
+	}
+	else
+	{
+		printf("Formato de numero incorrecto, reiniciando programa\n\n");
 	}
 }
 }
