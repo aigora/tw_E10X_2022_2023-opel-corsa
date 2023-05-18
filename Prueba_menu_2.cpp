@@ -139,7 +139,7 @@ void estadistica_balance()
 void subbalance1() {
     int tiempo,anyo1,anyo2,mes1,mes2;
 	printf("Estas viendo el balance energetico nacional\n");
-	printf("A continuacion, se mostraran las estadisticas mas notables sobre el balance desde el ano 2019 al 2023\n\n");
+	printf("A continuacion, se mostraran las estadisticas mas notables sobre el balance desde el ano 2019 al 2023, medido en Kw/H\n\n");
 	estadistica_balance();
 	printf("Elegir si lo quieres ver anualmente(1) o mensualmente(solo 2023)(2)\n");
 	scanf("%i",&tiempo);
@@ -451,10 +451,270 @@ void subbalance1() {
 }
 }
 }
+void subdemanda1(){
+	int dato;
+	int tiempo,anyo1,anyo2,mes1,mes2;
+	printf("Selecciona si quieres ver la demanda maxima diaria en el territorio peninsular (1),\n");
+	printf("la potencia maxima instantanea (2), o la evolucion de la demanda nacional anual (3)\n");
+	scanf("%i",&dato);
+	{
+		switch (dato){
+			case 1:
+				{
+					printf("Selecciona si quieres ver la demanda maxima diaria en el territorio nacional\n");
+					printf("de manera anual(1), o de manera mensual (2)\n");
+					scanf("%i",&tiempo);
+					switch (tiempo){
+						case 1:
+							{
+								printf("Has seleccionado verlo de forma anual\n");
+								printf("Introduce los sobre los que quieres ver datos, en el formato YY-YY (Desde 2019 a 2023)\n");
+			scanf("%i-%i",&anyo1,&anyo2);
+			if(anyo1>=anyo2||anyo1<19||anyo2>23)
+			{
+				printf("Formato de tiempo incorrecto, reiniciando el sistema\n");
+			}
+			else
+			{
+				if(anyo1==19)
+				{
+					if(anyo2==20)
+					{
+					FILE *pf,*pf1;
+	                int caracter;
+	                pf = fopen("Archivos de lectura/Ficheros/d_a_2019_2020.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("\nLos datos del fichero son: \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+
+			}
+		}
+				else if(anyo2==21)
+				{
+					FILE *pf;
+	                int caracter;
+	                pf = fopen("Archivos de lectura/Ficheros/d_a_2019_2021.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+				}
+			 	}
+			 	else if(anyo2==22)
+			 	{
+			 		FILE *pf;
+	                int caracter;
+	                pf = fopen("Archivos de lectura/Ficheros/d_a_2019_2022.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+				}
+				 }
+				 else if(anyo2==23)
+				 {
+				 	FILE *pf;
+	                int caracter;
+	                pf = fopen("Archivos de lectura/Ficheros/b_a_2019_2023.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+				}
+				 }
+				 }
+				 else if(anyo1==20)
+				 {
+				 	if(anyo2==21)
+				 	{
+				 	FILE *pf;
+	                int caracter;
+	                pf = fopen("Archivos de lectura/Ficheros/b_a_2020_2021.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+				}
+				    }
+				    else if(anyo2==22)
+				 {
+				 	FILE *pf;
+	                int caracter;
+	                pf = fopen("Archivos de lectura/Ficheros/b_a_2020_2022.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+				}
+				 }
+				 else if(anyo2==23)
+				 {
+				 				 		FILE *pf;
+	                int caracter;
+	                pf = fopen("Archivos de lectura/Ficheros/b_a_2020_2023.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+				}
+				 }
+				 }
+				 else if(anyo1==21)
+				 {
+				 	if(anyo2==22)
+				 	{
+				 	FILE *pf;
+	                int caracter;
+	                pf = fopen("Archivos de lectura/Ficheros/b_a_2021_2022.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+				}
+				 }
+				 else if(anyo2==23)
+				 {
+				 	FILE *pf;
+	                int caracter;
+	                pf = fopen("Archivos de lectura/Ficheros/b_a_2021_2023.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+				 }
+					 }
+				 }
+				 if(anyo1==22)
+				 {
+				 	FILE *pf;
+	                int caracter;
+	                pf = fopen("Archivos de lectura/Ficheros/b_a_2022_2023.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+				 }
+							}
+						break;
+					}
+					
+				}
+			case 2:
+				{
+					printf("Adios");
+					break;
+				}
+			case 3:
+				{
+					printf("Buenas");
+					break;
+				}
+			default:
+				{
+					printf("Tardes");
+					break;
+				}
+		}
+	}
+	}
+}
+}
 
 
 
-void opcion1() {
+void opcion1() 
+{
+
     int subbalance, dato;
 	printf("Has elegido la opcion del balance energetico\n");
 	printf("El balance energetico nos habla sobre el porcentaje de energias\n");
@@ -465,24 +725,13 @@ void opcion1() {
 
 void opcion2() {
     int subdemanda,dato;
-	printf("Has elegido la opcion de la demanda\n");
-    printf("La demanda electrica nos habla del uso de la electricidad que se necesita cada dia en Espanya\n");
-    printf("Selecciona si quieres consultar la demanda b.c.(1), las perdidas de transportes(2), o la demanda final(3)\n");
-    scanf("%i",&dato);
-    if(dato==1)
-    {
-    	printf("hola\n");//explicacion y fichero sobre demanda b.c.
-	}
-	if(dato==2)
-	{
-		printf("adios\n"); //explicacion y fichero sobre perdidas de transporte
-	}
-	if(dato==3)
-	{
-		printf("joder\n");//explicacion y fichero sobre demanda final
-	}
-
-
+	printf("Has elegido la opcion de la demanda\n\n");
+    printf("La demanda electrica nos habla del uso de la electricidad que se necesita cada dia en Espanya\n\n");
+    printf("A continuacion, puedes consultar distintos datos de la demanda b.c.\n\n");
+    printf("Definicion: La demanda b.c.(barras de central): Energia inyectada en la red procedente de las centrales de generacion\n");
+    printf("y de las importaciones, y deducidos los consumos en bombeo y las exportaciones. Para el traslado de esta energia hasta\n");
+    printf("los puntos de consumo habria que detraer las perdidas originadas en la red de transporte y distribucion\n\n");
+    subdemanda1();
 }
 
 void opcion3() {
@@ -574,7 +823,7 @@ int main() {
 
     do {
         mostrarMenu();
-        scanf("%d", &opcion);
+        scanf("%i", &opcion);
 
         switch (opcion) {
             case 1:
@@ -597,15 +846,19 @@ int main() {
             	break;
             case 7:
             	opcion7();
-            		break;
+            	break;
             default:
-                printf("Opcion invalida\n");
+                printf("Opcion invalida, para reiniciar el programa pulsa cualquier tecla.\n");
+                scanf("%i", &opcion);
                 break;
 
         }
     } while (opcion != 7);
 
+
     return 0;
 }
+
+
 
 
