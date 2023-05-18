@@ -397,6 +397,7 @@ void subbalance1() {
 	                    }
                         fclose(pf);
 				 }
+				 break;
 						}
 					case 3:
 						{
@@ -454,18 +455,14 @@ void subbalance1() {
 void subdemanda1(){
 	int dato;
 	int tiempo,anyo1,anyo2,mes1,mes2;
-	printf("Selecciona si quieres ver la demanda maxima diaria en el territorio peninsular (1),\n");
-	printf("la potencia maxima instantanea (2), o la evolucion de la demanda nacional anual (3)\n");
-	scanf("%i",&dato);
+	
 	{
-		switch (dato){
-			case 1:
+	
 				{
 					printf("Selecciona si quieres ver la demanda maxima diaria en el territorio nacional\n");
 					printf("de manera anual(1), o de manera mensual (2)\n");
 					scanf("%i",&tiempo);
-					switch (tiempo){
-						case 1:
+					if(tiempo==1)
 							{
 								printf("Has seleccionado verlo de forma anual\n");
 								printf("Introduce los sobre los que quieres ver datos, en el formato YY-YY (Desde 2019 a 2023)\n");
@@ -565,7 +562,7 @@ void subdemanda1(){
 				 	{
 				 	FILE *pf;
 	                int caracter;
-	                pf = fopen("Archivos de lectura/Ficheros/b_a_2020_2021.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/d_a_2020_2021.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");
@@ -585,7 +582,7 @@ void subdemanda1(){
 				 {
 				 	FILE *pf;
 	                int caracter;
-	                pf = fopen("Archivos de lectura/Ficheros/b_a_2020_2022.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/d_a_2020_2022.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");
@@ -605,7 +602,7 @@ void subdemanda1(){
 				 {
 				 				 		FILE *pf;
 	                int caracter;
-	                pf = fopen("Archivos de lectura/Ficheros/b_a_2020_2023.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/d_a_2020_2023.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");
@@ -628,7 +625,7 @@ void subdemanda1(){
 				 	{
 				 	FILE *pf;
 	                int caracter;
-	                pf = fopen("Archivos de lectura/Ficheros/b_a_2021_2022.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/d_a_2021_2022.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");
@@ -648,7 +645,7 @@ void subdemanda1(){
 				 {
 				 	FILE *pf;
 	                int caracter;
-	                pf = fopen("Archivos de lectura/Ficheros/b_a_2021_2023.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/d_a_2021_2023.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");
@@ -669,7 +666,7 @@ void subdemanda1(){
 				 {
 				 	FILE *pf;
 	                int caracter;
-	                pf = fopen("Archivos de lectura/Ficheros/b_a_2022_2023.txt","r");
+	                pf = fopen("Archivos de lectura/Ficheros/d_a_2022_2023.txt","r");
 	                if(pf==NULL)
 	                {
 		                printf("Error al abrir el fichero de lectura.\n");
@@ -685,31 +682,96 @@ void subdemanda1(){
                         fclose(pf);
 				 }
 							}
-						break;
+		
+					
 					}
 					
 				}
-			case 2:
+				else if(tiempo==2)
 				{
-					printf("Adios");
-					break;
-				}
-			case 3:
+					printf("Estas viendo el balance energetico mensual de 2023 (hasta marzo)\n");
+			printf("Introduce el numero que corresponde a cada mes, siendo enero el 1\n");
+			printf("EL FORMATO DEBE SER: num-num\n");
+			scanf("%i-%i",&mes1,&mes2);
+			if(mes1==1)
+			{
+				switch(mes2)
 				{
-					printf("Buenas");
-					break;
+					case 2:
+						{
+					FILE *pf;
+	                int caracter;
+	                pf = fopen("Archivos de lectura/Ficheros/b_m23_en_feb.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+				 }
+						}
+						break;
+					case 3:
+						{
+					FILE *pf;
+	                int caracter;
+	                pf = fopen("Archivos de lectura/Ficheros/b_m23_en_mar.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+				 }
+						}
+					default:
+						printf("Formato de meses incorrecto, volviendo al menu principal...\n\n");
 				}
-			default:
-				{
-					printf("Tardes");
-					break;
-				}
-		}
-	}
-	}
-}
-}
 
+			}
+			else if(mes1==2)
+			{
+				{
+					FILE *pf;
+	                int caracter;
+	                pf = fopen("Archivos de lectura/Ficheros/b_m23_feb_mar.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+				 }
+						}
+			}
+
+
+	}
+}
+}
+}
+				
 
 
 void opcion1() 
