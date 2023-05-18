@@ -919,7 +919,7 @@ void subgeneracion1()
 	{
 		case 1:
 			printf("\nHas elegido la potencia instalada\n");
-			printf("Ahora, elige si quieres ver el periodo desde 2015 a 2019 (1), o desde 2019 a 2023 (1)\n");
+			printf("Ahora, elige si quieres ver el periodo desde 2015 a 2019 (1), o desde 2019 a 2023 (2)\n");
 			scanf("%i",&anyo);
 			if (anyo==1)
 			{
@@ -941,6 +941,7 @@ void subgeneracion1()
 	                    }
                         fclose(pf);
 			        }
+			        break;
 	        }
 	        else if (anyo==2)
 			{
@@ -962,7 +963,57 @@ void subgeneracion1()
 	                    }
                         fclose(pf);
 			}
+			break;
 	}
+	case 2:
+		printf("\nHas elegido la opcion de la estructura de la potencia renovable.\n\n");
+		printf("Ahora, elige si lo quieres ver en el periodo de 2015 a 2019 (1), o de 2019 a 2023 (2):\n\n");
+		scanf("%i",&anyo);
+		if (anyo==1)
+			{
+				printf("Has elegido el periodo de 2015 a 2019, a continuacion se te mostrara el fichero con los datos:\n");
+					FILE *pf;
+	                int caracter;
+	                pf = fopen("Archivos de lectura/Ficheros/g_p_inst_a_2015_2019.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+			        }
+	        }	
+	        else if (anyo==2)
+			{
+				printf("Has elegido el periodo de 2019 a 2023, a continuacion se te mostrara el fichero con los datos:\n");
+					FILE *pf;
+	                int caracter;
+	                pf = fopen("Archivos de lectura/Ficheros/g_p_inst_a_2019_2023.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+			        }
+	        }
+
+		
+		
 }
 				
 
