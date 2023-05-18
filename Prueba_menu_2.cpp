@@ -908,6 +908,19 @@ void subdemanda1(){
 }
 }
 }
+void subgeneracion1()
+{
+	int dato;
+	int tiempo,anyo1,anyo2;
+	printf("En la generacion, podemos ver distintos datos en periodos de 5 anyos en el territorio nacional\n");
+	printf("Decide si quieres ver la potencia instalada(1), la estructura de la \npotencia instalada renovable(2), o las emisiones generadas por la generacion\n");
+	scanf("%i",&dato);
+	switch(dato)
+	{
+		case 1:
+			printf("Hola");
+	}
+}
 				
 
 
@@ -934,9 +947,11 @@ void opcion2() {
 }
 
 void opcion3() {
+	int subgeneracion,dato;
     printf("Has elegido la opcion de generacion\n");
     printf("La generacion nos habla sobre los porcentajes de generacion de energias, las emisiones y\n");
     printf("el factor de emision de CO2, y la potencia instalada nacional\n");
+    subgeneracion1();
 
 }
 
