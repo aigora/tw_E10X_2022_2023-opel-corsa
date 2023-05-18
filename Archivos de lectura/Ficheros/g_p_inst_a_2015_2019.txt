@@ -1,0 +1,24 @@
+POTENCIA INSTALADA RENOVABLE POR TECNOLOGÍA/COMBUSTIBLE 01/01/2015-31/12/201
+
+Sistema eléctrico Peninsular
+
+Magnitudes [MW]
+
+
+                            2015               2016               2017               2018               2019
+
+
+
+Hidráulica:               17040,961          17047,991          17052,205          17062,859          17097,046
+Eólica:                   22761,827          22813,262          22851,621          23005,791          25244,194
+Solar fotovoltaica:       4434,688           4439,144           4442,013           4520,465           8495,255
+Solar térmica:            2304,013           2304,013           2304,013           2304,013           2304,013
+Otras renovables:         881,317            883,94             880,698            885,591            1035,816
+Residuos renovables:      114,838            114,838            118,838            118,838            118,838
+
+Potencia renovable:       47537,644          47603,188          47649,388          47897,557          54295,162
+
+
+Fecha exportación 19/05/2023 - 00:20:21
+ 
+Fuente www.ree.es

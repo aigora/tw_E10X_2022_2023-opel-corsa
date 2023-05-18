@@ -911,27 +911,70 @@ void subdemanda1(){
 void subgeneracion1()
 {
 	int dato;
-	int tiempo,anyo1,anyo2;
+	int tiempo,anyo;
 	printf("En la generacion, podemos ver distintos datos en periodos de 5 anyos en el territorio nacional\n");
 	printf("Decide si quieres ver la potencia instalada(1), la estructura de la \npotencia instalada renovable(2), o las emisiones generadas por la generacion\n");
 	scanf("%i",&dato);
 	switch(dato)
 	{
 		case 1:
-			printf("Hola");
+			printf("\nHas elegido la potencia instalada\n");
+			printf("Ahora, elige si quieres ver el periodo desde 2015 a 2019 (1), o desde 2019 a 2023 (1)\n");
+			scanf("%i",&anyo);
+			if (anyo==1)
+			{
+				printf("Has elegido el periodo de 2015 a 2019, a continuacion se te mostrara el fichero con los datos:\n");
+					FILE *pf;
+	                int caracter;
+	                pf = fopen("Archivos de lectura/Ficheros/g_p_a_2015_2019.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+			        }
+	        }
+	        else if (anyo==2)
+			{
+				printf("Has elegido el periodo de 2019 a 2023, a continuacion se te mostrara el fichero con los datos:\n");
+					FILE *pf;
+	                int caracter;
+	                pf = fopen("Archivos de lectura/Ficheros/g_p_a_2019_2023.txt","r");
+	                if(pf==NULL)
+	                {
+		                printf("Error al abrir el fichero de lectura.\n");
+	                }
+	                else
+                    {
+                        printf("Fichero abierto correctamente.\n");
+                        printf("\nEl contenido del archivo de prueba es \n\n");
+                        while((caracter = fgetc(pf)) != EOF)
+	                    {
+                            printf("%c",caracter);
+	                    }
+                        fclose(pf);
+			}
 	}
 }
 				
 
-
-void opcion1() 
+}
+void opcion1()
 {
 
     int subbalance, dato;
-	printf("Has elegido la opcion del balance energetico\n");
+	printf("Has elegido la opcion del balance energetico\n\n");
 	printf("El balance energetico nos habla sobre el porcentaje de energias\n");
-	printf("renovables y no renovables, y desglosa el tipo de energias que forman cada uno.");
-	printf("Ahora, vas a ver el balance energetico en todo el territorio nacional\n");
+	printf("renovables y no renovables, y desglosa el tipo de energias que forman cada uno.\n\n");
+	printf("Ahora, vas a ver el balance energetico en todo el territorio nacional\n\n");
 	subbalance1();
 }
 
