@@ -86,7 +86,7 @@ void estadistica_balance()
       }
       mean_anyo22 = mean_anyo22 + anyo22[i];
       
-                if(anyo21[i] > max_anyo21)
+                if(anyo23[i] > max_anyo23)
       {
         max_anyo23 = anyo23[i];
       }	  	
@@ -273,7 +273,7 @@ void subbalance1() {
 	printf("Estas viendo el balance energetico nacional\n");
 	printf("A continuacion, se mostraran las estadisticas mas notables sobre el balance desde el ano 2019 al 2023, medido en Kw/H\n\n");
 	estadistica_balance();
-	printf("Elegir si lo quieres ver anualmente(1) o mensualmente(solo 2023)(2)\n");
+	printf("Elige como lo quieres ver: \n\n-Anualmente(1) \n\n-Mensualmente(solo 2023)(2)\n");
 	scanf("%i",&tiempo);
 	switch(tiempo){
 		case 1:
@@ -593,7 +593,7 @@ void subdemanda1(){
 				{
 					printf("Vas a ver las estadisticas a nivel nacional\n\n");
 					estadistica_demanda();
-					printf("\nPresiona (1) para verlas de forma anual, o (2) de forma mensual\n");
+					printf("\nElige como quieres verlo: \n\n-Anual(1)\n\n-Mensual(2)\n");
 					scanf("%i",&tiempo);
 					if(tiempo==1)
 							{
@@ -912,14 +912,14 @@ void subgeneracion1()
 {
 	int dato;
 	int tiempo,anyo;
-	printf("En la generacion, podemos ver distintos datos en periodos de 5 anyos en el territorio nacional\n");
-	printf("Decide si quieres ver la potencia instalada(1), la estructura de la \npotencia instalada renovable(2), o las emisiones generadas(3)\n");
+	printf("En la generacion, podemos ver distintos datos en periodos de 5 anyos en el territorio nacional\n\n");
+	printf("Elige que quieres ver: \n\n-La potencia instalada(1) \n\nLa estructura de la potencia instalada renovable(2)\n\nLas emisiones generadas(3)\n");
 	scanf("%i",&dato);
 	switch(dato)
 	{
 		case 1:
 			printf("\nHas elegido la potencia instalada\n");
-			printf("Ahora, elige si quieres ver el periodo desde 2015 a 2019 (1), o desde 2019 a 2023 (2)\n");
+			printf("Ahora, elige en que periodo quieres ver datos:\n\n2015-2019(1)\n\n2019-2023 (2)\n");
 			scanf("%i",&anyo);
 			if (anyo==1)
 			{
@@ -967,7 +967,7 @@ void subgeneracion1()
 	}
 	case 2:
 		printf("\nHas elegido la opcion de la estructura de la potencia renovable.\n\n");
-		printf("Ahora, elige si lo quieres ver en el periodo de 2015 a 2019 (1), o de 2019 a 2023 (2):\n\n");
+		printf("Ahora, elige en que periodo quieres verlo: \n\n2015-2019 (1)\n\n2019-2023 (2):\n\n");
 		scanf("%i",&anyo);
 		if (anyo==1)
 			{
@@ -1015,7 +1015,7 @@ void subgeneracion1()
 	
 	case 3:
 	    printf("\nHas elegido la opcion de las emisiones generadas.\n\n");
-		printf("Ahora, elige si lo quieres ver en el periodo de 2007 a 2011 (1), de 2011 a 2015 (2), de 2015 a 2019 (3), o de 2019 a 2023 (4):\n\n");
+		printf("Ahora, elige el periodo en el que quieres verlo:\n\n2007-2011(1)\n\n2011-2015(2)\n\n2015-2019(3)\n\n2019-2023(4):\n\n");
 		scanf("%i",&anyo);
 		
 		if (anyo==1)
@@ -1147,19 +1147,19 @@ void opcion2() {
 
 void opcion3() {
 	int subgeneracion,dato;
-    printf("Has elegido la opcion de generacion\n");
-    printf("La generacion nos habla sobre los porcentajes de generacion de energias, las emisiones y\n");
-    printf("el factor de emision de CO2, y la potencia instalada nacional\n");
+    printf("Has elegido la opcion de generacion\n\n");
+    printf("La generacion nos habla sobre los porcentajes de generacion de energias, las emisiones y\n\n");
+    printf("el factor de emision de CO2, y la potencia instalada nacional\ \n");
     subgeneracion1();
 
 }
 
 void opcion4() {
     int subbintercambios, dato1, dato2;
-    printf("Has elegido la opcion de intercambios\n");
-    printf("Los intercambios ocurren tanto dentro de Espana como con Portugal, Marruecos, Andorra y Francia \n");
-    printf("y en estos nos muestran el saldo, la exportacion e importacion de cada pais\n");
-    printf("Selecciona si quieres consultar los intercambios internacionales (1) o entre peninsula y baleares(2)\n");
+    printf("Has elegido la opcion de intercambios\n\n");
+    printf("Los intercambios ocurren tanto dentro de Espana como con Portugal, Marruecos, Andorra y Francia \n\n");
+    printf("y en estos nos muestran el saldo, la exportacion e importacion de cada pais\n\n");
+    printf("Ahora, se te mostraran datos de los intercambios en todas las fronteras, en periodos anuales\n");
     scanf("%i",&dato1);
 
     if(dato1==1)
