@@ -264,6 +264,137 @@ void estadistica_demanda()
   }
 
 }
+void estadistica_generacion()
+{
+  FILE *plectura;
+  FILE *pescritura;
+
+  float anyo19[18];
+  float anyo20[18];
+  float anyo21[18];
+  float anyo22[18];
+  float anyo23[18];
+  int i = 0;
+  
+  plectura = fopen("Archivos de lectura/Ficheros/Estadisticas_generacion.txt", "r");
+
+  if (plectura == NULL)
+  {
+    printf("ERROR AL ABRIR EL FICHERO DE LECTURA\n");
+  }
+  else
+  {
+    for (i = 0; i <17; i++)
+    {
+      fscanf(plectura, "%f,%f,%f,%f,%f", &anyo19[i], &anyo20[i], &anyo21[i], &anyo22[i], &anyo23[i]); 
+    }
+    fclose(plectura);	
+    
+    float max_anyo19 = anyo19[0];
+    float min_anyo19 = anyo19[0];
+    float mean_anyo19 = 0;
+    float max_anyo20 = anyo20[0];
+    float min_anyo20 = anyo20[0];
+    float mean_anyo20 = 0;
+    float max_anyo21 = anyo21[0];
+    float min_anyo21 = anyo21[0];
+    float mean_anyo21 = 0;
+    float max_anyo22 = anyo22[0];
+    float min_anyo22 = anyo22[0];
+    float mean_anyo22 = 0;
+    float max_anyo23 = anyo23[0];
+    float min_anyo23 = anyo23[0];
+    float mean_anyo23 = 0;
+
+    for (i = 0; i < 17; i++)
+    {
+
+      if(anyo19[i] > max_anyo19)
+      {
+        max_anyo19 = anyo19[i];
+      }	  	
+      if(anyo19[i] < min_anyo19)
+      {
+        min_anyo19 = anyo19[i];				  		
+      }
+      mean_anyo19 = mean_anyo19 + anyo19[i];
+			
+            if(anyo20[i] > max_anyo20)
+      {
+        max_anyo20 = anyo20[i];
+      }	  	
+      if(anyo20[i] < min_anyo20)
+      {
+        min_anyo20 = anyo20[i];				  		
+      }
+      mean_anyo20 = mean_anyo20 + anyo20[i];	  	
+		  
+            if(anyo21[i] > max_anyo21)
+      {
+        max_anyo21 = anyo21[i];
+      }	  	
+      if(anyo21[i] < min_anyo21)
+      {
+        min_anyo21 = anyo21[i];				  		
+      }
+      mean_anyo21 = mean_anyo21 + anyo21[i];
+			
+            if(anyo22[i] > max_anyo22)
+      {
+        max_anyo22 = anyo22[i];
+      }	  	
+      if(anyo22[i] < min_anyo22)
+      {
+        min_anyo22 = anyo22[i];				  		
+      }
+      mean_anyo22 = mean_anyo22 + anyo22[i];
+      
+	            if(anyo23[i] > max_anyo23)
+      {
+        max_anyo23 = anyo23[i];
+      }	  	
+      if(anyo23[i] < min_anyo23)
+      {
+        min_anyo23 = anyo23[i];				  		
+      }
+      mean_anyo23 = mean_anyo23 + anyo23[i];
+			
+      }
+    
+    mean_anyo19 = mean_anyo19/17;
+    mean_anyo20 = mean_anyo20/17;
+    mean_anyo21 = mean_anyo21/17;
+    mean_anyo22 = mean_anyo22/17;
+	mean_anyo23 = mean_anyo23/17;
+		
+ 
+    printf("Variables: \t\t\t Min \t\t\t Max \t\t\t Prom \n");
+    printf("Ano 2019: \t\t %f \t\t %f \t\t %f \n", min_anyo19, max_anyo19, mean_anyo19);
+    printf("Ano 2020: \t\t %f \t\t %f \t\t %f \n",min_anyo20, max_anyo20, mean_anyo20);
+    printf("Ano 2021: \t\t %f \t\t %f \t\t %f \n", min_anyo21, max_anyo21, mean_anyo21);
+    printf("Ano 2022: \t\t %f \t\t %f \t\t %f \n", min_anyo22, max_anyo22, mean_anyo22);
+    printf("Ano 2023: \t\t %f \t\t %f \t\t %f \n\n", min_anyo23, max_anyo23, mean_anyo23);
+    
+    
+    pescritura= fopen("Archivos de lectura/Ficheros/escribir_fichero_generacion.txt", "w");
+    if (pescritura == NULL)
+    {
+      printf("ERROR AL ABRIR EL FICHERO DE ESCRITURA");
+    }
+    else
+    {	
+      fprintf(pescritura, "Variables: \t\t Min \t\t Max \t\t Prom \n");
+      fprintf(pescritura, "Ano 2019: \t %f \t %f \t %f \n", min_anyo19, max_anyo19, mean_anyo19);
+      fprintf(pescritura, "Ano 2020: \t %f \t %f \t %f \n",min_anyo20, max_anyo20, mean_anyo20);
+      fprintf(pescritura, "Ano 2021: \t %f \t %f \t %f \n", min_anyo21, max_anyo21, mean_anyo21);
+      fprintf(pescritura, "Ano 2022: \t %f \t %f \t %f \n", min_anyo22, max_anyo22, mean_anyo22);
+      fprintf(pescritura, "Ano 2023: \t %f \t %f \t %f \n", min_anyo23, max_anyo23, mean_anyo23);
+
+      fclose(pescritura);	
+    }		
+  }
+
+}
 
 
 
@@ -913,6 +1044,7 @@ void subgeneracion1()
 	int dato;
 	int tiempo,anyo;
 	printf("En la generacion, podemos ver distintos datos en periodos de 5 anyos en el territorio nacional\n\n");
+	estadistica_generacion();
 	printf("Elige que quieres ver: \n\n-La potencia instalada(1) \n\nLa estructura de la potencia instalada renovable(2)\n\nLas emisiones generadas(3)\n");
 	scanf("%i",&dato);
 	switch(dato)
@@ -1149,7 +1281,7 @@ void opcion3() {
 	int subgeneracion,dato;
     printf("Has elegido la opcion de generacion\n\n");
     printf("La generacion nos habla sobre los porcentajes de generacion de energias, las emisiones y\n\n");
-    printf("el factor de emision de CO2, y la potencia instalada nacional\ \n");
+    printf("el factor de emision de CO2, y la potencia instalada nacional\n\n");
     subgeneracion1();
 
 }
