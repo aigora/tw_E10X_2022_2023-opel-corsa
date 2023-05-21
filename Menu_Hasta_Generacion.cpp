@@ -1255,6 +1255,27 @@ void subgeneracion1()
 
 }
 }
+
+void subintercambios1()
+{
+	int dato;
+	printf("Ahora, elige, en periodos de 5 anos, de que periodo quieres que se te muestren los datos\n\n");
+	printf("El primer año a consultar es el 2003, de 5 en 5, hasta llegar a 2023\n\n");
+	printf("Selecciona los años:\n+2003-2007 (1)\n+2007-2011 (2)\n+2011-2015 (3)\n+2015-2019 (4)\n+2019-2023 (5)");
+	scanf("%i",&dato);
+	switch (dato)
+	{
+		case 1:
+			{
+				printf("Has elegido el periodo de anyos entre 2003 y 2007\n");
+			}
+	}
+
+}
+
+
+
+
 void opcion1()
 {
 
@@ -1287,55 +1308,12 @@ void opcion3() {
 }
 
 void opcion4() {
-    int subbintercambios, dato1, dato2;
+    int subintercambios, dato;
     printf("Has elegido la opcion de intercambios\n\n");
     printf("Los intercambios ocurren tanto dentro de Espana como con Portugal, Marruecos, Andorra y Francia \n\n");
     printf("y en estos nos muestran el saldo, la exportacion e importacion de cada pais\n\n");
-    printf("Ahora, se te mostraran datos de los intercambios en todas las fronteras, en periodos anuales\n");
-    scanf("%i",&dato1);
-
-    if(dato1==1)
-    {
-    	printf("intercambios internacionales:\n");
-    	printf("Selecciona la frontera:\n");
-    	printf("Todas las fronteras(1), Andorra(2), Francia(3), Marruecos(4) o Portugal(5)\n");
-    	scanf("%i",&dato2);
-
-    	if(dato2==1)
-      {
-    	printf("Todas las fronteras\n");
-      }
-        if(dato2==2)
-      {
-    	printf("Andorra\n");
-      }
-        if(dato2==3)
-      {
-    	printf("Francia\n");
-      }
-        if(dato2==4)
-      {
-    	printf("Marruecos\n");
-      }
-      if(dato2==5)
-      {
-    	printf("Portugal\n");
-      }
-
-
-
-
-    }
-
-	else
-	{
-		printf("Espana-Baleares\n");
-
-
-
-	}
-
-
+    subintercambios1();
+	
 
 }
 
@@ -1352,7 +1330,7 @@ void opcion7() {
 
 
 void mostrarMenu() {
-    printf("Menu:\n");
+    printf("\n\Menu:\n");
     printf("1. Balances\n");
     printf("2. Demanda\n");
     printf("3. Generacion\n");
