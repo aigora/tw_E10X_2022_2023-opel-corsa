@@ -269,11 +269,11 @@ void estadistica_generacion()
   FILE *plectura;
   FILE *pescritura;
 
-  float anyo19[18];
-  float anyo20[18];
-  float anyo21[18];
-  float anyo22[18];
-  float anyo23[18];
+  float anyo19[17];
+  float anyo20[17];
+  float anyo21[17];
+  float anyo22[17];
+  float anyo23[17];
   int i = 0;
   
   plectura = fopen("Archivos de lectura/Ficheros/Estadisticas_generacion.txt", "r");
