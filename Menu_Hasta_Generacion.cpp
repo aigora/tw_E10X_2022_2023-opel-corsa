@@ -1,4 +1,8 @@
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+
 
 
 void estadistica_balance()
@@ -1330,8 +1334,8 @@ void opcion7() {
 
 
 void mostrarMenu() {
-    printf("\n\Menu:\n");
-    printf("1. Balances\n");
+    printf("Menu:");
+    printf("\n1. Balances\n");
     printf("2. Demanda\n");
     printf("3. Generacion\n");
     printf("4. Intercambios\n");
