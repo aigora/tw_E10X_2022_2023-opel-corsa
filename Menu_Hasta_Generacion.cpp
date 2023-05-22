@@ -1048,8 +1048,9 @@ void subgeneracion1()
 	int dato;
 	int tiempo,anyo;
 	printf("En la generacion, podemos ver distintos datos en periodos de 5 anyos en el territorio nacional\n\n");
+	printf("A continuacion, se te mostraran los datos desde 2019 hasta 2023 de la estructura nacional en la peninsula:\n\n");
 	estadistica_generacion();
-	printf("Elige que quieres ver: \n\n-La potencia instalada(1) \n\nLa estructura de la potencia instalada renovable(2)\n\nLas emisiones generadas(3)\n");
+	printf("Elige que quieres ver: \n\n-La potencia instalada(1) \n\n-La estructura de la potencia renovable instalada(2)\n\n-Las emisiones generadas(3)\n");
 	scanf("%i",&dato);
 	switch(dato)
 	{
