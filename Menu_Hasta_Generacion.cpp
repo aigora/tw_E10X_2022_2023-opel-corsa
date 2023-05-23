@@ -1046,11 +1046,12 @@ void subdemanda1(){
 void subgeneracion1()
 {
 	int dato;
+	void generacion2122();
 	int tiempo,anyo;
 	printf("En la generacion, podemos ver distintos datos en periodos de 5 anyos en el territorio nacional\n\n");
 	printf("A continuacion, se te mostraran los datos desde 2019 hasta 2023 de la estructura nacional en la peninsula:\n\n");
 	estadistica_generacion();
-	printf("Elige que quieres ver: \n\n-La potencia instalada(1) \n\n-La estructura de la potencia renovable instalada(2)\n\n-Las emisiones generadas(3)\n");
+	printf("Elige que quieres ver: \n\n-La potencia instalada(1) \n\n-La estructura de la potencia renovable instalada(2)\n\n-Las emisiones generadas(3)\n\n-Estructura de la generacion por tecnologias (21-22)(4)");
 	scanf("%i",&dato);
 	switch(dato)
 	{
@@ -1100,6 +1101,8 @@ void subgeneracion1()
 	                    }
                         fclose(pf);
 			}
+			
+			
 			break;
 	}
 	case 2:
@@ -1253,12 +1256,49 @@ void subgeneracion1()
         else
         {
         	printf("\nERROR EN EL FORMATO; REINICIANDO EL PROGRAMA\n\n");
+        	
 		}
+		case 4:
+				printf("Has elegido la estructura de la generacion por tecnologias durante 2021-2022\n\n");
+				generacion2122();
+				break;
+			
 	default:
 	printf("\nERROR EN EL FORMATO; REINICIANDO EL PROGRAMA\n\n");
 				
 
 }
+}
+
+void generacion2122()
+{
+	FILE *archivo;
+    char linea[100];
+    int contador = 0;
+    char *palabra;
+    char *numero;
+
+    archivo = fopen("Archivos de lectura/Ficheros/generacion_por_tecnologias_21_22_puntos_simplificado (2).csv", "r"); 
+    
+    if (archivo == NULL) {
+        printf("No se pudo abrir el archivo.\n");
+        
+    }
+
+
+    for (int i = 0; i < 6; i++) {
+        if (fgets(linea, sizeof(linea), archivo) == NULL) {
+            fclose(archivo);
+            }
+    }
+
+    while (fgets(linea, sizeof(linea), archivo) != NULL) 
+	{
+        printf("%s\n", linea);
+    }
+    
+
+    fclose(archivo); 
 }
 
 void subintercambios1()
