@@ -1305,8 +1305,8 @@ void subintercambios1()
 {
 	int dato;
 	printf("Ahora, elige, en periodos de 5 anos, de que periodo quieres que se te muestren los datos\n\n");
-	printf("El primer año a consultar es el 2003, de 5 en 5, hasta llegar a 2023\n\n");
-	printf("Selecciona los años:\n+2003-2007 (1)\n+2007-2011 (2)\n+2011-2015 (3)\n+2015-2019 (4)\n+2019-2023 (5)");
+	printf("El primer aÃ±o a consultar es el 2003, de 5 en 5, hasta llegar a 2023\n\n");
+	printf("Selecciona los aÃ±os:\n+2003-2007 (1)\n+2007-2011 (2)\n+2011-2015 (3)\n+2015-2019 (4)\n+2019-2023 (5)");
 	scanf("%i",&dato);
 	switch (dato)
 	{
