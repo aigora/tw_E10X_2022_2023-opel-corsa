@@ -22,7 +22,7 @@ int main()
   else
   {
     // Leemos con un FOR porque conocemos el numero de lineas
-    // Si no leeríamos linea a liena hasta el final del archivo
+    // Si no leerÃ­amos linea a liena hasta el final del archivo
     for (i = 0; i <19; i++)
     {
       fscanf(plectura, "%f,%f,%f,%f,%f", &anyo19[i], &anyo20[i], &anyo21[i], &anyo22[i], &anyo23[i]); 
@@ -30,8 +30,8 @@ int main()
     // Se ha terminado de leer, luego se cierra el archivo
     fclose(plectura);	
 
-    // Suponemos que el mínimo y máximo valores son el primero
-    // Después iremos sustituyendo al encontrar un nuevo mínimo o máximo
+    // Suponemos que el mÃ­nimo y mÃ¡ximo valores son el primero
+    // DespuÃ©s iremos sustituyendo al encontrar un nuevo mÃ­nimo o mÃ¡ximo
     float max_anyo19 = anyo19[0];
     float min_anyo19 = anyo19[0];
     float mean_anyo19 = 0;
@@ -47,7 +47,7 @@ int main()
     float max_anyo23 = anyo23[0];
     float min_anyo23 = anyo23[0];
     float mean_anyo23 = 0;
-    // recorremos cada vector buscando mínimos y máximos y acumulando para las medias
+    // recorremos cada vector buscando mÃ­nimos y mÃ¡ximos y acumulando para las medias
     for (i = 0; i < 19; i++)
     {
 
