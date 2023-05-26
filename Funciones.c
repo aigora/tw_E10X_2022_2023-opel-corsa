@@ -1051,7 +1051,7 @@ void subgeneracion1()
 	printf("En la generacion, podemos ver distintos datos en periodos de 5 anyos en el territorio nacional\n\n");
 	printf("A continuacion, se te mostraran los datos desde 2019 hasta 2023 de la estructura nacional en la peninsula:\n\n");
 	estadistica_generacion();
-	printf("Elige que quieres ver: \n\n-La potencia instalada(1) \n\n-La estructura de la potencia renovable instalada(2)\n\n-Las emisiones generadas(3)\n\n-Estructura de la generacion por tecnologias (21-22)(4)");
+	printf("Elige que quieres ver: \n\n-La potencia instalada(1) \n\n-La estructura de la potencia renovable instalada(2)\n\n-Las emisiones generadas(3)\n\n-Estructura de la generacion por tecnologias (21-22)(4)\n");
 	scanf("%i",&dato);
 	switch(dato)
 	{
@@ -1259,7 +1259,7 @@ void subgeneracion1()
         	
 		}
 		case 4:
-				printf("Has elegido la estructura de la generacion por tecnologias durante 2021-2022\n\n");
+				printf("\nHas elegido la estructura de la generacion por tecnologias durante 2021-2022\n\n");
 				generacion2122();
 				break;
 			
@@ -1287,10 +1287,12 @@ void generacion2122()
     }
 
 
-    for (i = 0; i < 6; i++) {
-        if (fgets(linea, sizeof(linea), archivo) == NULL) {
+    for (i = 0; i < 6; i++) 
+	{
+        if (fgets(linea, sizeof(linea), archivo) == NULL) 
+		{
             fclose(archivo);
-            }
+        }
     }
 
     while (fgets(linea, sizeof(linea), archivo) != NULL) 
@@ -1301,25 +1303,6 @@ void generacion2122()
 
     fclose(archivo); 
 }
-
-void subintercambios1()
-{
-	int dato;
-	printf("Ahora, elige, en periodos de 5 anos, de que periodo quieres que se te muestren los datos\n\n");
-	printf("El primer año a consultar es el 2003, de 5 en 5, hasta llegar a 2023\n\n");
-	printf("Selecciona los años:\n+2003-2007 (1)\n+2007-2011 (2)\n+2011-2015 (3)\n+2015-2019 (4)\n+2019-2023 (5)");
-	scanf("%i",&dato);
-	switch (dato)
-	{
-		case 1:
-			{
-				printf("Has elegido el periodo de anyos entre 2003 y 2007\n");
-			}
-	}
-
-}
-
-
 
 
 void opcion1()
@@ -1352,37 +1335,16 @@ void opcion3() {
     subgeneracion1();
 
 }
-
 void opcion4() {
-    int subintercambios, dato;
-    printf("Has elegido la opcion de intercambios\n\n");
-    printf("Los intercambios ocurren tanto dentro de Espana como con Portugal, Marruecos, Andorra y Francia \n\n");
-    printf("y en estos nos muestran el saldo, la exportacion e importacion de cada pais\n\n");
-    subintercambios1();
-	
-
-}
-
-void opcion5() {
-    printf("Has elegido la opcion 5\n");
-}
-
-void opcion6() {
-    printf("Has elegido la opcion 6\n");
-}
-void opcion7() {
 	printf("Para salir, pulse cualquier tecla\n");
 }
 
 
 void mostrarMenu() {
-    printf("Menu:");
-    printf("\n1. Balances\n");
-    printf("2. Demanda\n");
-    printf("3. Generacion\n");
-    printf("4. Intercambios\n");
-    printf("5. Transportes\n");
-    printf("6. Mercados\n");
-    printf("7. Salir\n");
-    printf("Seleccione una opcion (1-7): ");
+    printf("Menu:\n\n");
+    printf("\n1. Balances\n\n");
+    printf("2. Demanda\n\n");
+    printf("3. Generacion\n\n");
+    printf("4. Salir\n\n");
+    printf("Seleccione una opcion (1-4): ");
 }

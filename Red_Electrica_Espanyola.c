@@ -1304,25 +1304,6 @@ void generacion2122()
     fclose(archivo); 
 }
 
-void subintercambios1()
-{
-	int dato;
-	printf("Ahora, elige, en periodos de 5 anos, de que periodo quieres que se te muestren los datos\n\n");
-	printf("El primer año a consultar es el 2003, de 5 en 5, hasta llegar a 2023\n\n");
-	printf("Selecciona los años:\n+2003-2007 (1)\n+2007-2011 (2)\n+2011-2015 (3)\n+2015-2019 (4)\n+2019-2023 (5)");
-	scanf("%i",&dato);
-	switch (dato)
-	{
-		case 1:
-			{
-				printf("Has elegido el periodo de anyos entre 2003 y 2007\n");
-			}
-	}
-
-}
-
-
-
 
 void opcion1()
 {
@@ -1354,39 +1335,18 @@ void opcion3() {
     subgeneracion1();
 
 }
-
 void opcion4() {
-    int subintercambios, dato;
-    printf("Has elegido la opcion de intercambios\n\n");
-    printf("Los intercambios ocurren tanto dentro de Espana como con Portugal, Marruecos, Andorra y Francia \n\n");
-    printf("y en estos nos muestran el saldo, la exportacion e importacion de cada pais\n\n");
-    subintercambios1();
-	
-
-}
-
-void opcion5() {
-    printf("Has elegido la opcion 5\n");
-}
-
-void opcion6() {
-    printf("Has elegido la opcion 6\n");
-}
-void opcion7() {
 	printf("Para salir, pulse cualquier tecla\n");
 }
 
 
 void mostrarMenu() {
-    printf("Menu:");
-    printf("\n1. Balances\n");
-    printf("2. Demanda\n");
-    printf("3. Generacion\n");
-    printf("4. Intercambios\n");
-    printf("5. Transportes\n");
-    printf("6. Mercados\n");
-    printf("7. Salir\n");
-    printf("Seleccione una opcion (1-7): ");
+    printf("Menu:\n\n");
+    printf("\n1. Balances\n\n");
+    printf("2. Demanda\n\n");
+    printf("3. Generacion\n\n");
+    printf("4. Salir\n\n");
+    printf("Seleccione una opcion (1-4): ");
 }
 
 int main() {
@@ -1407,16 +1367,7 @@ int main() {
                 opcion3();
                 break;
             case 4:
-                opcion4();
-                break;
-            case 5:
-                opcion5();
-                break;
-            case 6:
-            	opcion6();
-            	break;
-            case 7:
-            	opcion7();
+            	opcion4();
             	break;
             default:
                 printf("Opcion invalida, para reiniciar el programa pulsa cualquier tecla.\n");
@@ -1424,7 +1375,7 @@ int main() {
                 break;
 
         }
-    } while (opcion != 7);
+    } while (opcion != 4);
 
 
     return 0;
