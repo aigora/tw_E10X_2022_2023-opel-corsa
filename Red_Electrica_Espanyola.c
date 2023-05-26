@@ -1249,13 +1249,16 @@ void subgeneracion1()
 	                    }
                         fclose(pf);
                      
-	                }           
+	                }  
+					
+					break;         
 		
 		
         }
         else
         {
         	printf("\nERROR EN EL FORMATO; REINICIANDO EL PROGRAMA\n\n");
+        	break;
         	
 		}
 		case 4:
@@ -1341,7 +1344,7 @@ void opcion4() {
 
 
 void mostrarMenu() {
-    printf("Menu:\n\n");
+    printf("Menu:\n");
     printf("\n1. Balances\n\n");
     printf("2. Demanda\n\n");
     printf("3. Generacion\n\n");

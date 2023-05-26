@@ -1250,12 +1250,14 @@ void subgeneracion1()
                         fclose(pf);
                      
 	                }           
+	                break;
 		
 		
         }
         else
         {
         	printf("\nERROR EN EL FORMATO; REINICIANDO EL PROGRAMA\n\n");
+        	break;
         	
 		}
 		case 4:
