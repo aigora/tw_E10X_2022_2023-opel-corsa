@@ -1051,7 +1051,7 @@ void subgeneracion1()
 	printf("En la generacion, podemos ver distintos datos en periodos de 5 anyos en el territorio nacional\n\n");
 	printf("A continuacion, se te mostraran los datos desde 2019 hasta 2023 de la estructura nacional en la peninsula:\n\n");
 	estadistica_generacion();
-	printf("Elige que quieres ver: \n\n-La potencia instalada(1) \n\n-La estructura de la potencia renovable instalada(2)\n\n-Las emisiones generadas(3)\n\n-Estructura de la generacion por tecnologias (21-22)(4)\n");
+	printf("Elige que quieres ver: \n\n-La potencia instalada(1) \n\n-La estructura de la potencia renovable instalada(2)\n\n-Las emisiones generadas(3)\n\n-Estructura de la generacion por tecnologias (21-22)(4)");
 	scanf("%i",&dato);
 	switch(dato)
 	{
@@ -1259,7 +1259,7 @@ void subgeneracion1()
         	
 		}
 		case 4:
-				printf("\nHas elegido la estructura de la generacion por tecnologias durante 2021-2022\n\n");
+				printf("Has elegido la estructura de la generacion por tecnologias durante 2021-2022\n\n");
 				generacion2122();
 				break;
 			
@@ -1287,12 +1287,10 @@ void generacion2122()
     }
 
 
-    for (i = 0; i < 6; i++) 
-	{
-        if (fgets(linea, sizeof(linea), archivo) == NULL) 
-		{
+    for (i = 0; i < 6; i++) {
+        if (fgets(linea, sizeof(linea), archivo) == NULL) {
             fclose(archivo);
-        }
+            }
     }
 
     while (fgets(linea, sizeof(linea), archivo) != NULL) 
@@ -1388,48 +1386,3 @@ void mostrarMenu() {
     printf("7. Salir\n");
     printf("Seleccione una opcion (1-7): ");
 }
-
-int main() {
-    int opcion;
-
-    do {
-        mostrarMenu();
-        scanf("%i", &opcion);
-
-        switch (opcion) {
-            case 1:
-                opcion1();
-                break;
-            case 2:
-                opcion2();
-                break;
-            case 3:
-                opcion3();
-                break;
-            case 4:
-                opcion4();
-                break;
-            case 5:
-                opcion5();
-                break;
-            case 6:
-            	opcion6();
-            	break;
-            case 7:
-            	opcion7();
-            	break;
-            default:
-                printf("Opcion invalida, para reiniciar el programa pulsa cualquier tecla.\n");
-                scanf("%i", &opcion);
-                break;
-
-        }
-    } while (opcion != 7);
-
-
-    return 0;
-}
-
-
-
-
